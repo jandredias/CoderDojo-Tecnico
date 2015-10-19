@@ -1,0 +1,97 @@
+*{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.coderdojo-header{
+  overflow: visible;
+}
+.demo-layout-transparent {
+  background: url('../images/coderdojo-logo.png') center / cover;
+}
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+  color: white;
+}
+
+.coderdojo-content{
+  background-color: #f3f3f3;
+}
+
+.coderdojo-article {
+  border-radius: 4px;
+  padding:30px 20px;
+  margin:20px;
+}
+
+.coderdojo-search-box{
+  order: 2;
+}
+
+.coderdojo-login.mdl-card {
+  width: 90%;
+  margin:0 auto;
+}
+.coderdojo-login > .mdl-card__actions {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+.coderdojo-login > .mdl-card__title {
+  align-items: flex-start;
+}
+.coderdojo-login > .mdl-card__title > h4 {
+  margin-top: 0;
+}
+.coderdojo-login > .mdl-card__actions {
+  display: flex;
+  box-sizing:border-box;
+  align-items: center;
+}
+.coderdojo-login > .mdl-card__title,
+.coderdojo-login > .mdl-card__actions,
+.coderdojo-login > .mdl-card__actions > .mdl-button {
+}
+
+
+.mdl-card__supporting-text{
+  width: calc(100% - 32px);
+}
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.cblogin-card-square.mdl-card {
+  width: 90%;
+  margin:0 auto;
+  margin-top:20px;
+}
+.cblogin-card-square > .mdl-card__title {
+  color: #fff;
+}
+
+.user-card-image.mdl-card {
+  width: 100%;
+  height: 256px;
+}
+.user-card-image > .mdl-card__actions {
+  height: 52px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.2);
+}
+.user-card-image__filename {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
