@@ -72,6 +72,12 @@
             <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
             <div class="content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
               <div style="margin-top:50px;"></div>
+              <div class="mdl-card mdl-shadow--2dp" style="width:100%;margin-bottom:80px;">
+                <?php JFactory::getApplication()->enqueueMessage('', 'warning'); ?>
+                <?php JFactory::getApplication()->enqueueMessage('', 'notice'); ?>
+                <?php JFactory::getApplication()->enqueueMessage('', 'error'); ?>
+                <?php JFactory::getApplication()->enqueueMessage('', 'message'); ?>
+              </div>
               <jdoc:include type="modules" name="main_top" />
               <!-- DON'T FORGET TO ADD mdl-color--white mdl-shadow--4dp classes to inner element -->
               <jdoc:include type="component" />
