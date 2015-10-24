@@ -49,7 +49,7 @@ function tableOrdering( order, dir, task ) {
     	echo $this->loadTemplate('category');
 
     if (count($this->categories) && $this->category->id > 0)
-        echo $this->loadTemplate('subcategories');*/
+        echo $this->loadTemplate('subcategories');
     ?>
     <?php
 
