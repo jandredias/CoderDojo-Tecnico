@@ -41,38 +41,8 @@ function tableOrdering( order, dir, task ) {
   </h3>
   </div>
   <?php } ?>
-
-	<div class="mdl-card__supportedtext" style="width: calc(100% - 32px);margin:0 auto;">
-    <?php
-
-    if ($this->category->id > 0)
-    	echo $this->loadTemplate('category');
-
-    if (count($this->categories) && $this->category->id > 0)
-        echo $this->loadTemplate('subcategories');
-    ?>
-    <?php
-/*
-    jimport('joomla.html.pane');
-    $jversion = new JVersion();
-    $short_version = $jversion->getShortVersion();
-
-    if (version_compare($short_version, "3.0", 'ge')) {
-      $tabs = JPaneOSGF::getInstance('tabs', array('startOffset'=>0));
-    } else {
-      $tabs = JPane::getInstance('tabs', array('startOffset'=>0));
-    }
-    echo $tabs->startPane('mytabs');
-    echo $tabs->startPanel(JText::_('COM_SEMINARMAN_DATES'), 0);
-    echo '<div class="seminarmancoursepan">' . $this->loadTemplate('courses') . '</div>';
-    echo $tabs->endPanel();
-    if ($this->params->get('enable_salesprospects', 0) == 1)
-    {
-    	echo $tabs->startPanel(JText::_('COM_SEMINARMAN_LST_OF_SALES_PROSPECTS'), 0);
-    	echo '<div class="seminarmantemplatepan">' . $this->loadTemplate('templates') . '</div>';
-    	echo $tabs->endPanel();
-    }
-    echo $tabs->endPane();*/
-    ?>
-  </div>
+  <?php jimport('joomla.html.pane');
+  $jversion = new JVersion();
+  $short_version = $jversion->getShortVersion();
+  echo $this->loadTemplate('courses'); ?>
 </div>
