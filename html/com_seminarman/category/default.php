@@ -52,7 +52,7 @@ function tableOrdering( order, dir, task ) {
         echo $this->loadTemplate('subcategories');
     ?>
     <?php
-
+/*
     jimport('joomla.html.pane');
     $jversion = new JVersion();
     $short_version = $jversion->getShortVersion();
