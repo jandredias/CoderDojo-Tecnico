@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension version="2.5" type="template">
+<extension version="2.5" type="template" method="upgrade">
 	<name>CoderDojo@Técnico</name>
 	<creationDate>2015-10-15</creationDate>
 	<author>André Dias</author>

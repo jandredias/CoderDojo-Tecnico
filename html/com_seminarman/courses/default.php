@@ -351,7 +351,11 @@ function submitbuttonSeminarman(task)
 			<?php if ($this->course->bookable){ ?>
 			<div class="mdl-cell mdl-cell--4-col">
 					<dd class="centered">
-						<a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="setVisibility();" href="<?php echo JURI::getInstance()->toString(); ?>#course_appform"><?php echo JText::_('COM_SEMINARMAN_BOOK_COURSE'); ?></a>
+						<a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+						onclick="setVisibility();return false;"
+						href="<?php echo JURI::getInstance()->toString(); ?>#course_appform">
+						<?php echo JText::_('COM_SEMINARMAN_BOOK_COURSE'); ?>
+					</a>
 					</dd>
 			</div>
 			<?php } ?>
