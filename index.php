@@ -78,6 +78,7 @@
                 <?php // JFactory::getApplication()->enqueueMessage('', 'error'); ?>
                 <?php // JFactory::getApplication()->enqueueMessage('', 'message'); ?>
               <!-- </div> -->
+              <jdoc:include type="messages" />
               <jdoc:include type="modules" name="main_top" />
               <!-- DON'T FORGET TO ADD mdl-color--white mdl-shadow--4dp classes to inner element -->
               <jdoc:include type="component" />
