@@ -48,8 +48,10 @@ if ($this->params->get('enable_payment_overview') == 1) {
 </p>
 
 <div class="mdl-grid">
+  <input name="title" type="hidden" id="title" value="NA" title="<?php echo JText::_('COM_SEMINARMAN_TITLE') . '::' . JText::_('COM_SEMINARMAN_FILL_IN_DETAILS'); ?>" />
+  <?php /*
 	<div class="mdl-cell mdl-cell--4-col">
-		<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+		<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"> 
 			<input class="mdl-textfield__input hasTip tipRight inputbox required"
 			name="title" size="20" maxlength="250" type="text" id="title"
 			value="<?php echo isset($_POST['title']) ? $_POST['title'] : $this->escape($this->attendeedata->title); ?>"
@@ -57,7 +59,7 @@ if ($this->params->get('enable_payment_overview') == 1) {
 			<label class="mdl-textfield__label" for="title"><?php echo JText::_('COM_SEMINARMAN_TITLE'); ?></label>
 		</div>
 	</div>
-
+  */ ?>
 	<div class="mdl-cell mdl-cell--4-col">
 		<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
 			<input class="mdl-textfield__input hasTip tipRight inputbox required"
