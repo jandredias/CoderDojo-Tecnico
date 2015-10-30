@@ -1,5 +1,6 @@
 <?php defined( '_JEXEC' ) or die( 'Restricted access' );?>
-<?php $config         = JFactory::getConfig(); ?>
+<?php $config         = JFactory::getConfig();
+$doc =& JFactory::getDocument(); ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
    xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" >
@@ -72,13 +73,7 @@
             <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
             <div class="content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
               <div style="margin-top:50px;"></div>
-              <!-- <div class="mdl-card mdl-shadow--2dp" style="width:100%;margin-bottom:80px;"> -->
-                <?php // JFactory::getApplication()->enqueueMessage('', 'warning'); ?>
-                <?php // JFactory::getApplication()->enqueueMessage('', 'notice'); ?>
-                <?php // JFactory::getApplication()->enqueueMessage('', 'error'); ?>
-                <?php // JFactory::getApplication()->enqueueMessage('', 'message'); ?>
-              <!-- </div> -->
-              <jdoc:include type="messages" />
+              <jdoc:include type="message" />
               <jdoc:include type="modules" name="main_top" />
               <!-- DON'T FORGET TO ADD mdl-color--white mdl-shadow--4dp classes to inner element -->
               <jdoc:include type="component" />
