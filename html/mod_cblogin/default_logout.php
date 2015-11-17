@@ -29,7 +29,9 @@ JHtml::_( 'behavior.keepalive' );
 		  <div class="mdl-card__title mdl-card--expand"></div>
 		  <div class="mdl-card__actions">
 
-		    <span class="user-card-image__filename">Hi, André!</span>
+		    <span class="user-card-image__filename">
+		      Hi, <?php $user =& JFactory::getUser(); echo $user->get( 'name' ); ?>!
+		    </span>
 		  </div>
 		</div>
 		<div class="mdl-card__actions">
